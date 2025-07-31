@@ -1,0 +1,7 @@
+torch
+sam2
+opencv-python
+pyk4a
+numpy
+ultralytics
+mediapipe
