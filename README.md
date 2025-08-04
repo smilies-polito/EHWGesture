@@ -110,6 +110,7 @@ This Github repository contains the main scripts for reproducing the baseline ex
 ### TriggerDetection
 - Scripts for the event localization task
 
-## Citation, if you use our dataset, please cite:
+## Citations
+If you use our dataset, please cite:
 ```text
 ```
