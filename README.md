@@ -11,7 +11,7 @@ Hand gesture understanding is essential for several applications in human-comput
 The EHWGesture is publicly available for download here under CCBY4 license: [EHWGesture-download here](https://drive.cloud.polito.it/index.php/s/5cFBs6HFtrK7PXf). Volunteers faces were anonymized and any usage excluded from educational and research purposes is not allowed. We hold no liability for any undesiderable consequences of using the database. 
 
 ## Release Notes
-EHWGesture v1.0:
+*EHWGesture v1.0*:
 - First release is online! MOCAP data for test subjects are already available, while those for the remaining subjects are currently under processing and will be soon available for all subjects. 
 
 ## Dataset content and structure 
