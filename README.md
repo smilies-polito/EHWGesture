@@ -1,6 +1,6 @@
 # EHWGesture - A dataset for multimodal understanding of clinical gestures
 
-This repository introduces EHWGesture, a multimodal dataset for clinical gesture understanding (i.e., gesture recognition, triggering, action quality assessment), including RGB-Depth, Event (Neuromorphic vision) and Motion Capture data. This work will be presented at the First International Workshop on Skilled Activity Understanding Workshop of IEE/CVF ICCV 2025, Honolulu (US).
+This repository introduces EHWGesture, a multimodal dataset for clinical gesture understanding (i.e., gesture recognition, triggering, action quality assessment), including RGB-Depth, Event (Neuromorphic vision) and Motion Capture data. This work will be presented at the First International Workshop on Skilled Activity Understanding of IEE/CVF ICCV 2025, Honolulu (US).
 
 ![Dynamic Gestures Examples](examples_anony_v3.png)
 
@@ -15,7 +15,6 @@ The EHWGesture is publicly available for download here under CCBY4 license: [EHW
 - First release is online! MOCAP data for test subjects are already available, while those for the remaining subjects are currently under processing and will be soon available for all subjects. 
 
 ## Dataset content and structure 
-
 The dataset contains separate folders for each modality, annotations, global calibration among all sensors and additional metadata. EHWGesture folder structure is as follows:
 
 ```text
@@ -83,14 +82,16 @@ EHWGESTURE/
         └── sub_kinect_config.json        # Vendor-provided sub Kinect calibration
 ```
 
-## Contents
-This Github repository contains the main scripts for reproducing the baseline experiments presented in the original publication. For our baseline experiments, we randomly picked up subjects X1, X5, X8, X17, X25 as test subjects. Therefore, consider those subjects when benchmarking your own results. For reproducibility, the following scripts are provided:
+## Repository content
+This Github repository contains the main scripts for reproducing the baseline experiments presented in the original publication. For our baseline experiments, we randomly picked up subjects X1, X5, X8, X17, X25 as test subjects. Therefore, consider those subjects when benchmarking your own results. 
+
+For reproducibility, the following scripts are provided:
 
 ### ScriptsEvent
 - `aedat_analizer_script.py`: Analyze AEDAT files.
-- `extract_event_frames.py`: Extract frames from event data.
-- `find_sync_triggers_event.py`: Find synchronization triggers in event data.
-- `hand_trajectory_parallel_extraction_event.py`: Extract hand trajectories in parallel from event data.
+- `extract_event_frames.py`: Extract frames from event data at 30 fps.
+- `find_sync_triggers_event.py`: Find synchronization triggers in event data to align with Kinects frames.
+- `hand_trajectory_parallel_extraction_event.py`: Extract hand trajectories in parallel from event data - useful to identify cropping windows.
 - `visualize_npy_event.py`: Visualize `.npy` event data.
 
 ### ScriptsKinects
@@ -103,13 +104,14 @@ This Github repository contains the main scripts for reproducing the baseline ex
 - `TrackingData.py`: Handle tracking data.
 
 ### TrainingCode
-- `exp_num_frames.sh`: Paper experiment for window length.
-- `exp_time_downsample.sh`: Paper experiment for time downsampling.
-- `main.py`: Main script for training.
+- `exp_num_frames.sh`: Paper experiment for window length impact on training.
+- `exp_time_downsample.sh`: Paper experiment for time downsampling impact on training.
+- `main.py`: Main script for training multimodal models.
 
 ### TriggerDetection
-- Scripts for the event localization task
-
+- `class_metrics.py`: Utility classes for processing gestures
+- `localization_main.py`: Extract trigger moments in gestures from RGB 
+- `triggering_statistics.py`: Paper experiment statistics for the triggering experiment
 ## Citations
 If you use our dataset, please cite:
 ```text
