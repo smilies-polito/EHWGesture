@@ -82,6 +82,17 @@ EHWGESTURE/
         └── sub_kinect_config.json        # Vendor-provided sub Kinect calibration
 ```
 
+The dataset includes five clinical gestures from the [MDS-UPDRS](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.movementdisorders.org/MDS/MDS-Rating-Scales/MDS-Unified-Parkinsons-Disease-Rating-Scale-MDS-UPDRS.htm&ved=2ahUKEwjlzdCwo_GOAxXfgf0HHSM5DqoQFnoECB0QAQ&usg=AOvVaw3L51vWh98FH6pkc7NGduLh), standardized for the assessment of motor symptoms in Parkinson's disease:
+- Finger Tapping
+- Hand movements (opening-closing)
+- Pronation-supination
+- Tremor (hands outstrectched)
+- Nose-reaching maneuver
+
+Finger Tapping, Hand movements and Pronation-supination are executed at 3 different speeds by each subject to introduce an **action quality assessment** task along traditional gesture recognition. 
+
+Filenames contains the label information, e.g., FTS1 --> Finger Tapping Slow, 1st recording, OCN2 --> Opening-Closing Normal, 2nd recording, PSF1 --> Pronation-Supination Fast, 1st recording. NOSE1 --> Nose-reaching, 1st recording.
+
 ## Repository content
 This Github repository contains the main scripts for reproducing the baseline experiments presented in the original publication. For our baseline experiments, we randomly picked up subjects X1, X5, X8, X17, X25 as test subjects. Therefore, consider those subjects when benchmarking your own results. 
 
