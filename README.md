@@ -1,6 +1,8 @@
 # EHWGesture - A dataset for multimodal understanding of clinical gestures
 
-This repository introduces EHWGesture, a multimodal dataset for clinical gesture understanding (i.e., gesture recognition, triggering, action quality assessment), including RGB-Depth, Event (Neuromorphic vision) and Motion Capture data. This work will be presented at the First International Workshop on Skilled Activity Understanding Workshop of IEE/CVF ICCV 2025, Honolulu (US)
+This repository introduces EHWGesture, a multimodal dataset for clinical gesture understanding (i.e., gesture recognition, triggering, action quality assessment), including RGB-Depth, Event (Neuromorphic vision) and Motion Capture data. This work will be presented at the First International Workshop on Skilled Activity Understanding Workshop of IEE/CVF ICCV 2025, Honolulu (US).
+
+![Alt text](example_anony_v3.png)
 
 ## Abstract
 Hand gesture understanding is essential for several applications in human-computer interaction, including automatic clinical assessment of hand dexterity. While deep learning has advanced static gesture recognition, dynamic gesture understanding remains challenging due to complex spatiotemporal variations. Moreover, existing datasets often lack multimodal and multi-view diversity, precise ground-truth tracking, and an action quality component embedded within gestures. This paper introduces EHWGesture, a multimodal video dataset for gesture understanding featuring five clinically relevant gestures. It includes over 1,100 recordings (∼6 hours), captured from 25 healthy subjects using two high-resolution RGB-Depth cameras and an event camera. A motion capture system provides precise ground-truth hand landmark tracking, and all devices are spatially calibrated and synchronized to ensure cross-modal alignment. Moreover, to embed an action quality task within gesture understanding, collected recordings are organized in classes of execution speed that mirror clinical evaluations of hand dexterity. Baseline experiments highlight the dataset’s potential for gesture classification, gesture trigger detection, and action quality assessment. Thus, EHWGesture can serve as a comprehensive benchmark for advancing multimodal clinical gesture understanding.
@@ -82,7 +84,7 @@ EHWGESTURE/
 ```
 
 ## Contents
-The repository contains main scripts for reproducing the baseline experiments presented in the original publication. For our baseline experiments, we randomly picked up subjects X1, X5, X8, X17, X25 as test subjects. Therefore, consider those subjects when benchmarking your own results. For reproducibility, the following scripts are provided:
+This Github repository contains the main scripts for reproducing the baseline experiments presented in the original publication. For our baseline experiments, we randomly picked up subjects X1, X5, X8, X17, X25 as test subjects. Therefore, consider those subjects when benchmarking your own results. For reproducibility, the following scripts are provided:
 
 ### ScriptsEvent
 - `aedat_analizer_script.py`: Analyze AEDAT files.
@@ -107,3 +109,4 @@ The repository contains main scripts for reproducing the baseline experiments pr
 
 ### TriggerDetection
 - Scripts for the event localization task
+
