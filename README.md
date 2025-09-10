@@ -1,6 +1,6 @@
 # EHWGesture - A dataset for multimodal understanding of clinical gestures
 
-This repository introduces EHWGesture, a multimodal dataset for clinical gesture understanding (i.e., gesture recognition, triggering, action quality assessment), including RGB-Depth, Event (Neuromorphic vision) and Motion Capture data. This work will be presented at the First International Workshop on Skilled Activity Understanding of IEE/CVF ICCV 2025, Honolulu (US).
+This repository introduces EHWGesture, a multimodal dataset for clinical gesture understanding (i.e., gesture recognition, triggering, action quality assessment), including RGB-Depth, Event (Neuromorphic vision) and Motion Capture data. This work will be presented at the First International Workshop on Skilled Activity Understanding of IEE/CVF ICCV 2025, Honolulu (US). Preprint available on [Arxiv](https://doi.org/10.48550/arXiv.2509.07525).
 
 ![Dynamic Gestures Examples](examples_anony_v3.png)
 
@@ -132,6 +132,5 @@ If you use our dataset, please cite:
       eprint={2509.07525},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2509.07525}, 
-}
+      url={https://arxiv.org/abs/2509.07525}}
 ```
