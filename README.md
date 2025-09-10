@@ -125,5 +125,13 @@ For reproducibility, the following scripts are provided:
 - `triggering_statistics.py`: Paper experiment statistics for the triggering experiment
 ## Citations
 If you use our dataset, please cite:
-```text
+```@misc{amprimo2025ehwgesturedatasetmultimodal,
+      title={EHWGesture -- A dataset for multimodal understanding of clinical gestures}, 
+      author={Gianluca Amprimo and Alberto Ancilotto and Alessandro Savino and Fabio Quazzolo and Claudia Ferraris and Gabriella Olmo and Elisabetta Farella and Stefano Di Carlo},
+      year={2025},
+      eprint={2509.07525},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.07525}, 
+}
 ```
